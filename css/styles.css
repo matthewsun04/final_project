@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eddcd9;
+}
+
+header {
+    background-color: #f2ebe9;
+    color: #264143;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #f2ebe9;
+}
+
+nav a {
+    color: #264143;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+nav a:hover {
+    background-color: #264143;
+    color:#eddcd9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #f2ebe9;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #264143;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    max-width: 60%;
+    min-height: 80%;
+    margin: 0 auto; 
+    color: #264143;
+
+}
+
+.rounded {
+    border-radius: 50%;
+    width: 40%;
+}
+
+.home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#aboutPortfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto; 
+    background-color: #eddcd9;
+    gap: 33%;
+
+}
+
+#about {
+    padding: 20px;
+    background-color: #de5499;
+    border-radius: 15px;
+}
+
+#portfolio {
+    padding: 20px;
+    background-color: #de5499;
+    border-radius: 15px;
+    column-span: none;
+}
+
+.flip-card {
+    perspective: 1000px;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #264143;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: lightcyan;
+}
+
+.flip-card-back {
+    background-color: beige;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #264143;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    max-width: 60%;
+    min-height: 80%;
+    margin: 0 auto;
+    justify-items: center
+ }
+.logos {
+    max-width: 30%;
+}
+
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+  background-color: #f2ebe9;
+  color: #264143;
+}
+  
+#slideshows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+ 
+    margin: 0 auto; 
+    background-color: #eddcd9;
+    gap: 20%;
+    max-width: 80%;
+    justify-content: center;
+}
+
+#text {
+    color:#264143;
+}
+
+#resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+ 
+    background-color: navy;
+    gap: 10%;
+    min-width: 100%;
+    justify-content: center;
+}
+
+object {
+    zoom: 150%;
+}
+
+#summary {
+    font-size: 150%;
+    padding: 5%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+#sendForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    min-width: 60%;
+    background-color: #264143;
+    color: #eddcd9;
+}
